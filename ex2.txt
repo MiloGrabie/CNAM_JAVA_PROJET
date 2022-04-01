@@ -1,0 +1,9 @@
+2.2 Le résultat est alpha=0.85, epsilon=0.001, indice=100, mode=CREUSE.
+
+2.3 On peut en déduire que le programme doit parser le string "15.5" en in (d'où le ParseInt()) et donc que le paramètre
+    K ne peut pas prendre de float
+
+2.4 Oui, car ici on peut remarqué que le ParseInt n'empêche pas la compilation si le format de son argument n'est pas contrôlé.
+
+2.6 Étant donnée que le contrôle de l'exception en prend pas en compte les ArrayIndexOutOfBoundsException qui pourraient
+    se produire avec le paramètre suivant : "-K 5 -A".

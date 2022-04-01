@@ -1,0 +1,10 @@
+1.1 Override dans un contexte d'héritage indique la fonction comportant cette annotation remplace la même fonction
+    (avec le même nom) de la classe hérité. En l'occurence, la class Configuration hérite (comme toute les autres classes)
+    de la classe Objet de base de Java, qui comprend la méthode toString(), ici réimplémenter.
+
+1.2 Il ne faudrait pas que les attributs soit en public car on ne souhaite pas que ces paramètres soit modifiable
+    pendant la suite du déroulement du programme. On peut les rendre private, mais on peut aussi les mettres en protected,
+    afin que si une classe hérite de Configuration, elle puisse les modifier.
+
+1.3 Écrire c1.equals(c2) est possible mais cela ne retournera pas true, car il faudrait pour ça override la méthode
+    equals de base, et comparer chacun des attributs des comparaisons.
